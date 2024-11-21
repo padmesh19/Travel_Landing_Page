@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabook</title>
+    <link rel="shortcut icon" href="./public/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Font Styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Poppins Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Volkhov Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <div class="container">
+        <section class="hero">
+            <nav class="navmenu">
+                <div class="menu-container">
+                    <div class="logo">
+                        <a href="#">
+                            Trabook
+                            <span><img src="./public/logo.svg"></span>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#destination">Destination</a>
+                        <a href="#tour">Tour</a>
+                        <a href="#blog">Blog</a>
+                    </div>
+                    <div class="login-signup">
+                        <a href="#login">Login</a>
+                        <a href="#signup">Sign up</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Get started your exciting <span class="primary">journey</span> with us.</h1>
+                    <p>A Team of experienced tourism professionals will provide you with the best advice and tips for
+                        your
+                        desire place.</p>
+                    <button>Discover Now</button>
+                </div>
+
+                <div class="hero-image">
+                    <img id="travel-pic" src="./public/hero-travel-img.png" loading="eager">
+                    <img id="travel-pic-bg" src="./public/hero-travel-img-bg.svg" loading="eager">
+                </div>
+            </div>
+
+            <div class="search-bar">
+                <div class="search-content">
+                    <div class="search-input">
+                        <label for="location">
+                            <span>Location</span>
+                            <img src="./public/dropdown-icon.svg">
+                        </label>
+                        <input id="location" type="text" placeholder="Where are you going">
+                    </div>
+                    <div class="search-input">
+                        <label for="date-input">
+                            <span>Date</span>
+                            <img src="./public/dropdown-icon.svg">
+                        </label>
+                        <input id="date-input" type="text" placeholder="when will you go" onfocus="(this.type='date')"
+                            onblur="(this.type='text')">
+                    </div>
+                    <div class="search-input">
+                        <label for="no-of-guest">
+                            <span>Guest</span>
+                            <img src="./public/dropdown-icon.svg">
+                        </label>
+                        <input id="no-of-guest" type="text" placeholder="Number of guests">
+                    </div>
+                    <button>Explore Now</button>
+                </div>
+            </div>
+        </section>
+        <!-- //////////////////////////////////// -->
+
+
+        <!-- Things Your Need -->
+        <section class="need-to-do">
+            <div class="needs-content">
+                <div class="needs-main">
+                    <h2>Things you need <span class="primary">to do</span></h2>
+                    <p>We ensure that you’ll embark on a perfectly planned, safe vacation at a price you can afford.</p>
+                </div>
+                <div class="needs-card">
+                    <div class="needs-signup needs-card-item">
+                        <img src="./public/needs-signup.svg">
+                        <h3>Sign Up</h3>
+                        <p>Completes all the work associated with planning and processing</p>
+                    </div>
+                    <div class="needs-money needs-card-item">
+                        <img src="./public/needs-money.svg">
+                        <h3>Worth of Money</h3>
+                        <p>After successful access then book from exclusive deals & pricing</p>
+                    </div>
+                    <div class="needs-travel needs-card-item">
+                        <img src="./public/needs-travel.svg">
+                        <h3>Exciting Travel</h3>
+                        <p>Start and explore a wide range of exciting travel experience.</p>
+                    </div>
+                </div>
+                <img id="needs-content-bg" src="./public/things-your-need-img-bg.svg" alt="">
+            </div>
+        </section>
+        <!-- /////////////////////////////////////////// -->
+
+
+        <!-- Exclusive Deals -->
+        <section class="deals">
+            <div class="deals-container">
+                <div class="deals-content">
+                    <h2>Exclusive <span class="primary">deals & discounts</span></h2>
+                    <p>Discover our fantastic early booking discounts & start planning your journey.</p>
+                </div>
+                <div class="deals-card">
+                    <div class="card-item">
+                        <div class="card-image-container">
+                            <img id="madrid-img" class="card-image" src="./public/Madrid-image.svg"
+                                alt="Madrid-image" />
+                            <div class="overlay"></div>
+                            <button class="hidden-button">Book Now</button>
+                        </div>
+                        <div class="upper-content">
+                            <h3>Madrid</h3>
+                            <div class="star-rating">
+                                <img src="./public/star-icon.svg">
+                                <span class="grey">4.8</span>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <div class="place-location">
+                                <img src="./public/place-location-icon.svg">
+                                <span class="grey">Spain</span>
+                            </div>
+                            <div class="price">
+                                <span class="grey line-through">$950</span>
+                                <span class="bg-primary-light">$850</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-image-container">
+                            <img id="firenze-img" class="card-image" src="./public/Firenze-image.svg"
+                                alt="Madrid-image" />
+                            <div class="overlay"></div>
+                            <button class="hidden-button">Book Now</button>
+                        </div>
+                        <div class="upper-content">
+                            <h3>Firenze</h3>
+                            <div class="star-rating">
+                                <img src="./public/star-icon.svg">
+                                <span class="grey">4.5</span>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <div class="place-location">
+                                <img src="./public/place-location-icon.svg">
+                                <span class="grey">Italy</span>
+                            </div>
+                            <div class="price">
+                                <span class="grey line-through">$850</span>
+                                <span class="bg-primary-light">$750</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-image-container">
+                            <img id="paris-img" class="card-image" src="./public/Paris-image.svg" alt="Madrid-image" />
+                            <div class="overlay"></div>
+                            <button class="hidden-button">Book Now</button>
+                        </div>
+                        <div class="upper-content">
+                            <h3>Paris</h3>
+                            <div class="star-rating">
+                                <img src="./public/star-icon.svg">
+                                <span class="grey">4.4</span>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <div class="place-location">
+                                <img src="./public/place-location-icon.svg">
+                                <span class="grey">France</span>
+                            </div>
+                            <div class="price">
+                                <span class="grey line-through">$699</span>
+                                <span class="bg-primary-light">$599</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-image-container">
+                            <img id="london-img" class="card-image" src="./public/London-image.svg"
+                                alt="Madrid-image" />
+                            <div class="overlay"></div>
+                            <button class="hidden-button">Book Now</button>
+                        </div>
+                        <div class="upper-content">
+                            <h3>London</h3>
+                            <div class="star-rating">
+                                <img src="./public/star-icon.svg">
+                                <span class="grey">4.8</span>
+                            </div>
+                        </div>
+                        <div class="footer-content">
+                            <div class="place-location">
+                                <img src="./public/place-location-icon.svg">
+                                <span class="grey">UK</span>
+                            </div>
+                            <div class="price">
+                                <span class="grey line-through">$850</span>
+                                <span class="bg-primary-light">$850</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-btn">
+                    <div class="slide-btn">
+                        <button><i class="fa-solid fa-arrow-left"></i></button>
+                    </div>
+                    <div class="slide-btn">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ///////////////////////////////////////////////////////////////// -->
+        <!-- //////////////////////////////////////////////////////////////// -->
+
+        <!-- Plans Section -->
+
+        <section class="plans-section">
+            <div class="plans-container">
+                <div class="plans-main">
+                    <h2>Best <span class="primary">vacation plan</span></h2>
+                    <p>Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!
+                    </p>
+                </div>
+                <div class="slider-btn plan-slider-btn">
+                    <div class="slide-btn">
+                        <button><i class="fa-solid fa-arrow-left"></i></button>
+                    </div>
+                    <div class="slide-btn">
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="plans-card">
+                    <div class="plans-card-item">
+                        <img id="rome-img" class="plans-card-image" src="./public/Rome-image.png" alt="Rome-image" />
+                        <div class="plans-upper-content">
+                            <h3>Rome,Italy</h3>
+                            <p>$5,42k</p>
+                        </div>
+                        <div class="plans-footer-content">
+                            <div class="trip-days">
+                                <img src="./public/location-arrow.svg">
+                                <span class="grey">10 Days Trip</span>
+                            </div>
+                            <div class="star-rating">
+                                <img src="./public/star-icon.svg">
+                                <span class="grey">4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plans-card-item">
+                        <div class="plans-image-container">
+                            <img id="london-uk-img" class="plans-card-image" src="./public/London-uk-image.png"
+                                alt="London-image" />
+                        </div>
+                        <div class="plans-upper-content">
+                            <h3>London,UK</h3>
+                            <p>$2,42k</p>
+                        </div>
+                        <div class="plans-footer-content">
+                            <div class="trip-days">
+                                <img src="./public/location-arrow.svg">
+                                <span class="grey">7 Days Trip</span>
+                            </div>
+                            <div class="star-rating">
+                                <img src="./public/star-icon.svg">
+                                <span class="grey">4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plans-card-item">
+                        <div class="plans-image-container">
+                            <img id="osaka-img" class="plans-card-image" src="./public/Osaka-image.png"
+                                alt="Osaka-image" />
+                        </div>
+                        <div class="plans-upper-content">
+                            <h3>Osaka,Japan</h3>
+                            <p>$5,42k</p>
+                        </div>
+                        <div class="plans-footer-content">
+                            <div class="trip-days">
+                                <img src="./public/location-arrow.svg">
+                                <span class="grey">10 Days Trip</span>
+                            </div>
+                            <div class="star-rating">
+                                <img src="./public/star-icon.svg">
+                                <span class="grey">4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./public/plans-bg-img.svg" class="plans-bg-img">
+            </div>
+        </section>
+
+        <section class="people-comment">
+            <div class="people-comment-container">
+                <div class="text-content">
+                    <h2>What people say <span class="primary">about us.</span></h2>
+                    <p>Our clients send us bunch of smilies with our services and we love them.</p>
+                    <div class="slider-btn">
+                        <div class="slide-btn">
+                            <button><i class="fa-solid fa-arrow-left"></i></button>
+                        </div>
+                        <div class="slide-btn">
+                            <button><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <img id="image-content-img" src="./public/Client-1.png">
+                    <img id="image-content-bg" src="./public/Client-2.png">
+                </div>
+            </div>
+            <img id="people-comment-bg" src="./public/people-say-bg.svg">
+        </section>
+
+        <section class="blog-section">
+            <div class="blog-container">
+                <h2>Get update with <span class="primary">latest blog</span></h2>
+
+                <div class="blog-card">
+                    <div class="blog-card-item">
+                        <img class="blog-card-image" src="./public/blog-img-1.png" alt="blog-image-1" />
+                        <h3>The Amazing Difference a Year of Travelling.</h3>
+                        <span class="grey">July 27, 2021</span>
+                    </div>
+
+                    <div class="blog-card-item">
+                        <img class="blog-card-image" src="./public/blog-img-2.png" alt="blog-image-2" />
+                        <h3>Travel far enough, you meet yourself.</h3>
+                        <span class="grey">July 27, 2021</span>
+                    </div>
+
+                    <div class="blog-card-item">
+                        <img class="blog-card-image" src="./public/blog-img-3.png" alt="blog-image-3" />
+                        <h3>How to Save Money While Visiting Africa.</h3>
+                        <span class="grey">July 27, 2021</span>
+                    </div>
+
+                    <div class="blog-card-item">
+                        <img class="blog-card-image" src="./public/blog-img-4.png" alt="blog-image-4" />
+                        <h3>Reflections on 5 Months of Travel: Time to Hang.</h3>
+                        <span class="grey">July 27, 2021</span>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <label for="slide1" class="nav-btn"></label>
+                    <label for="slide2" class="nav-btn"></label>
+                    <label for="slide3" class="nav-btn"></label>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-section">
+            <div class="footer-container">
+                <div class="subscribe-container">
+                    <h2>Subscribe and get exclusive deals & offer</h2>
+                    <div class="input-container">
+                        <img class="input-drop-icon" src="./public/input-drop-icon.png">
+                        <input type="text" placeholder="Enter your mail" class="input-box">
+                        <button class="input-button">Subscribe</button>
+                    </div>
+                    <img src="./public/subscribe-bg.svg" id="subscribe-bg">
+                    <img src="./public/subscribr-tree-bg.svg" id="subscribe-tree-bg">
+                </div>
+                <div class="footer-main-content">
+                    <div class="app-content">
+                        <h3>Trabook <img class="footer-logo" src="./public/logo.svg"></h3>
+                        <p id="app-content-p">Book your trip in minute, get full Control for much longer.</p>
+                        <div class="social-media-links">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div class="link-content">
+                        <div class="link-content-item">
+                            <h4>Company</h4>
+                            <a href="">About</a>
+                            <a href="">Careers</a>
+                            <a href="">Logistic</a>
+                            <a href="">Privacy & Policy</a>
+                        </div>
+                        <div class="link-content-item">
+                            <h4>Contact</h4>
+                            <a href="">Help/FAQ</a>
+                            <a href="">Press</a>
+                            <a href="">Affilates</a>
+                        </div>
+                        <div class="link-content-item">
+                            <h4>More</h4>
+                            <a href="">Press Centre</a>
+                            <a href="">Our Blog</a>
+                            <a href="">Low fare tips</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="end-content">
+                    <p class="grey">Copyright, Trabook 2022. All rights reserved.</p>
+                    <p class="grey">Terms and Conditions</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
